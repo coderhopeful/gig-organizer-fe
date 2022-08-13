@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+   
+    
+}
+
+.sidebar{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+    box-shadow: 2px 0px 10px 2px #888888;
+    z-index:1;
+
+  min-height: 100vh;
+}
+
+.main{
+    flex:10;
+   
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+.logo img{
+    width: 3rem;
+    
+}
+
+.logo{
+    margin-top:1rem;
+   
+}
+
+.icons img{
+    width:1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    gap:.5rem;
+    align-items: center;
+    height: 12vh;
+    
+}
+
+.notification{
+    width: 1rem;
+    height: 3vh;
+}
+
+.profile{
+    width:5rem;
+    height: 10vh;
+
+}
+
+.main-content{
+    background-color:#e9ecef;
+    /* height: 88vh; */
+    z-index: 99;
+}
+
+.title{
+    margin-left: 3rem;
+    padding-top: 3rem;
+}
+
+h5{
+    font-weight: 500;
+}
+
+.title p{
+    color:#adb5bd;
+    font-weight: 600;
+}
+
+.navbar{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: white;
+    padding: 1.3rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status{
+    display: flex;
+    gap:1.5rem;
+    font-weight: 600;
+
+}
+
+.search{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    
+}
+
+.search input{
+    border-radius: 2rem;
+    border: 1px solid grey;
+    height: 5vh;
+    width: 10rem;
+    color:#6c757d;
+}
+
+.search select{
+    border-radius: 2rem;
+    border: 1px solid grey;
+    height: 6vh;
+    width: 8rem;
+    color:#6c757d;
+}
+
+.search img{
+    height: 5vh;
+}
+
+.cards{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: white;
+    padding: 1.3rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    
+    align-items: center;
+   margin-top:3rem;
+   /* height:45vh; */
+
+}
+
+.status span:hover{
+    border-bottom: 3px orange solid;
+}
+
+.card{
+    justify-content: flex-start;
+   background-color: white;
+    padding: 1.3rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+   width: 20rem;
+   /* height:40vh; */
+}
+
+.gig{
+    display: flex;
+    width: 100%;
+    
+}
+.date{
+    display: flex;
+    width: 100%;
+}
+.budget{
+    display: flex;
+    width: 100%;
+}
+
+.card img{
+    width: 3rem;
+    height: 5vh;
+}
+
+.card h6{
+    font-size: .7rem;
+    color: #6c757d;
+}
+
+.card p{
+    font-size: .7rem;
+}
+
+.resources h5{
+    font-size: .9rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.resources span{
+    font-size: .7rem;
+}
+.res-status{
+    
+    display: flex;
+    gap:2.5rem;
+    
+}
+.res-status p{
+    text-align: center;
+}
+
+@media (max-width: 890px) and (min-width:430px){
+
+    html{
+        font-size: 12px;
+    }
+
+    .cards{
+        justify-content: center;
+    }
+    .card{
+        justify-content: center;
+        
+    }
+
+
+
+}
+
+@media (max-width: 430px){
+    html{
+        font-size: 10px;
+    }
+
+    .cards{
+        justify-content: center;
+    }
+    .card{
+        justify-content: center;
+        
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        gap:.5rem;
+        align-items: center;
+        height: 12vh;
+        
+    }
+
+}
